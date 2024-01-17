@@ -1,0 +1,14 @@
+<div class="task-form">
+  <h2>Add/Edit Task</h2>
+  <form (ngSubmit)="saveTask()" [formGroup]="taskForm">
+    <div class="form-group">
+      <label for="taskName">Task Name</label>
+      <input type="text" id="taskName" name="taskName" formControlName="taskName">
+      <input type="text" id="taskDescription" name="taskDescription" formControlName="taskDescription">
+      <div *ngIf="taskForm.controls['taskName'].invalid && taskForm.controls['taskName'].touched" class="error">
+        Task Name is required.
+      </div>
+    </div>
+    <button type="submit">Save Task</button>
+  </form>
+</div>

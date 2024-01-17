@@ -1,0 +1,28 @@
+<div class="task-details">
+    <div class="field">
+      <div class="field-group">
+      <label for="task-id">Task ID:</label>
+      <span type="text" id="task-id">{{taskLocal.id}}</span>
+      </div>
+
+      <div class="field-group">
+      <label for="task-name">Task Name:</label>
+      <input type="text" id="task-name" class="editable-field" [(ngModel)]= "taskLocal.name">
+    </div>
+
+    <div class="field-group">
+      <label for="due-date">Due Date:</label>
+      <input type="text" id="due-date" class="editable-field" value="2023-09-30">
+    </div>
+  </div>
+    
+    <div class="field field-group">
+      <label for="task-description">Task Description:</label>
+      <textarea id="task-description" class="editable-field" [(ngModel)] = "taskLocal.description"></textarea>
+    </div>
+    
+    <div class="button-container">
+      <button class="update-button" (click)="updateTask()">Update</button>
+      <button class="delete-button" (click)="deleteTask()">Delete</button>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+.button-container {
+    display: flex;
+    justify-content: center; /* Align buttons horizontally in the center */
+    align-items: center; /* Align buttons vertically in the center */
+    flex-direction: row; /* Arrange buttons horizontally */
+    gap: 10px; /* Add spacing between buttons */
+  }
+  
+  .update-button,
+  .delete-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .task-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .field-group{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  label {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 14px; /* Adjust font size as needed */
+    font-family: Arial, sans-serif; /* Specify font family as needed */
+    color: #333; /* Specify label text color */
+  }
+  
+  .editable-field {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Add any additional styles as needed */
+  
